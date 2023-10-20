@@ -28,7 +28,7 @@ function checkCredentials(name) {
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         if (password === "DevilCan`tCry") {
-            window.location.href = "/home/motorola/tomorow/hacker2.html"; 
+            window.location.href = "hacker2.html"; 
             return false; 
         } else {
             alert("Неправильный логин или пароль");
