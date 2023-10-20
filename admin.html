@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Хакерский Логин</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0F0;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 150px;
+        }
+
+        .login-box {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #0F0;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #0F0;
+            background-color: #000;
+            color: #0F0;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #0F0;
+            color: #000;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #090;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Хакерская админская панель</h2>
+        
+            <!-- Ваша форма здесь -->
+            <input type="text" id="username" name="username" placeholder="Имя пользователя" >
+            <input type="password" id="password" name="password" placeholder="Пароль" >
+            <button style="width: 100px; height: 20px;" value="потвердить" onclick="checkCredentials()"> потвердить</button>
+       
+        <script>
+            function checkCredentials() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                if (username === "Kevin" && password === "{Net0verK1ll}") {
+                    window.location.href = "/home/motorola/tomorow/hacker1.html"; // Замените на путь к вашей странице
+                    return false; // Чтобы предотвратить отправку формы на текущий URL
+                } else {
+                    alert("Неправильный логин или пароль");
+                    return false; // Чтобы предотвратить отправку формы на текущий URL
+                }
+            }
+        </script>
+        
+    </div>
+    <p>///////////////////////////////////////////////////////////////////////////////////////</p>
+    <p>На всякий случай если ты забыл эти данные подсказываю</p>
+    <p>Логин это имя вот этого замечательного мужика -></p>
+    <img style="width: 400px; height: 400px;"src="mitnik.jpeg">
+    <p>Пароль закодированный в URL - %7BNet0verK1ll%7D </p>   
+    <p>НЕ СМЕЙТЕ ДЕКОДИРОВАТЬ ПАРОЛЬ ЕСЛИ ВЫ НЕ АДМИН </p>
+    <p>////////////////////////////////////////////////////////////////////////////////////////</p>
+   
+</body>
+
+</html>
