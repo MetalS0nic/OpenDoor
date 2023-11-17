@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Атака на роботов</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0F0;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 150px;
+        }
+
+        .login-box {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #0F0;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #0F0;
+            background-color: #000;
+            color: #0F0;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #0F0;
+            color: #000;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(12, 8, 77)
+        }
+    </style>
+</head>
+
+<body>
+ <div>Tout vient à point à celui qui sait attendre.</div>
+ <p>Терпеение это дорого</p>
+ <p>Хакерское терпение дороже вдвойне</p>
+ <p>Чтобы перейти на следующий таск вам понадобиться пароль</p>
+ <p>Пароль есть у нашего робота. Осталось понять "где на сайте хранится робот"</p>
+
+ <input type="password" id="password" name="password" placeholder="Пароль" >
+ <button style="width: 100px; height: 20px;" value="потвердить" onclick="checkCredentials()"> потвердить</button>
+
+<script>
+ function checkCredentials() {
+     var password = document.getElementById("password").value;
+     if (password == "Sueno_imposible") {
+         window.location.href = "hakerFINAL.html"; // Замените на путь к вашей странице
+         return false; // Чтобы предотвратить отправку формы на текущий URL
+     } else {
+         alert("Неправильный логин или пароль");
+         return false; // Чтобы предотвратить отправку формы на текущий URL
+     }
+ }
+</script>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Disllalow: *
+Password: "Sueno_imposible"
